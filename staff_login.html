@@ -1,46 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UIC | Login</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UIC | Login</title>
 
-  <link rel="stylesheet" href="css/staff_login.css">
+    <link rel="stylesheet" href="css/staff_login.css" />
 
-  <script src="js/staff_login.js"></script>
+    <script src="js/staff_login.js"></script>
+  </head>
 
-</head>
+  <body>
+    <header>
+      <img src="images/uic logo.jpg" alt="UIC Logo" />
+      <h1>University Institute of Computing</h1>
+      <h2><u>Student Information System</u></h2>
+    </header>
 
-<body>
+    <main>
+      <div class="login-card">
+        <h3>🔒 Staff Login</h3>
+        <form onsubmit="validateLogin(event)">
+          <label class="req" for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" />
 
-  <header>
-    <img src="images/uic logo.jpg" alt="UIC Logo">
-    <h1>University Institute of Computing</h1>
-    <h2><u>Student Information System</u></h2>
-  </header>
+          <label class="req" for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your password"
+          />
 
-  <main>
-    <div class="login-card">
-      <h3>🔒 Staff Login</h3>
-      <form onsubmit="validateLogin(event)">
-        <label class="req" for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email">
+          <div class="buttons">
+            <button type="submit">Login</button>
+            <button type="reset">Reset</button>
+            <button
+              type="button"
+              onclick="window.location.href = 'staff_register.html'"
+            >
+              Register
+            </button>
+          </div>
+        </form>
+      </div>
+    </main>
 
-        <label class="req" for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password">
-
-        <div class="buttons">
-          <button type="submit">Login</button>
-          <button type="reset">Reset</button>
-          <button type="button" onclick="window.location.href='staff_register.html'">Register</button>
-        </div>
-      </form>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2025 University Institute of Computing (UIC). All Rights Reserved.</p>
-  </footer>
-
-</body>
+    <footer>
+      <p>
+        © 2025 University Institute of Computing (UIC). All Rights Reserved.
+      </p>
+    </footer>
+  </body>
 </html>
