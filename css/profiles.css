@@ -1,0 +1,74 @@
+        /* ------------------ Search Box ------------------ */
+        #searchBox {
+        width: 50%;
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #653e22;
+        border-radius: 6px;
+        display: block;
+        margin: 20px auto;
+        background-color: rgba(255, 250, 240, 0.9);
+        color: #3e2723;
+        }
+
+        /* ------------------ Profiles Grid ------------------ */
+        .profiles {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 25px;
+        margin: 20px auto;
+        max-width: 1100px;
+        }
+
+        /* ------------------ Profile Cards ------------------ */
+        .profile-card {
+        background: rgba(255, 250, 240, 0.9);
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        text-align: center;
+        padding: 20px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+        transform: scale(1.03);
+        box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+        }
+
+        .profile-card img {
+        height: 180px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        /* ------------------ Card Text ------------------ */
+        .profile-card h3 {
+        color: #8b4513;
+        margin: 10px 0 5px 0;
+        }
+
+        .profile-card p {
+        color: #4a311f;
+        margin: 4px 0;
+        font-size: 15px;
+        }
+
+        /* ------------------ Card Links ------------------ */
+        .profile-card a {
+
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 14px;
+        background: #653e22;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .profile-card a:hover {
+        background: #8b4513;
+        transform: scale(1.05);
+        }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MCA Department</title>
+  <link rel="stylesheet" href="css/uic.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="js/auth_check.js"></script>
+</head>
+<body>
+
+  <header>
+    <img src="images/uic logo.jpg" alt="UIC Logo" height="120">
+    <h1>University Institute of Computing</h1>
+    <h2><u>Student Information System</u></h2>
+    <nav>
+      <a href="uic.html">Home</a> |
+      <a href="uic_bca.html">BCA</a> |
+      <a href="uic_mca.html">MCA</a> |
+      <button onclick="logoutUser()" style="background-color:#653e22; color:white; padding:8px 15px; border:none; border-radius:6px; cursor:pointer;">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2><u>MCA - Student List</u></h2>
+
+      <!-- 🔍 Search Box -->
+      <input type="text" id="searchBox" placeholder="Search by name or UID...">
+
+      <table border="1" cellpadding="8" cellspacing="0" id="studentTable">
+        <caption>Student Name & UID</caption>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Name</th>
+            <th>UID</th>
+            <th>Profile</th>
+            <th>Academic Record</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Deepak Patidar</td>
+            <td>25MCA20103</td>
+            <td><a href="mca_profiles.html#profile-25MCA20103"><i class="fa-solid fa-user"></i>&nbsp;View Profile</a></td>
+            <td><a href="25MCA20103.html"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;View Academic Record</a></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Aarav Sharma</td>
+            <td>25MCA20104</td>
+            <td><a href="mca_profiles.html#profile-25MCA20104"><i class="fa-solid fa-user"></i>&nbsp;View Profile</a></td>
+            <td><a href="25MCA20104.html"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;View Academic Record</a></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Priya Verma</td>
+            <td>25MCA20105</td>
+            <td><a href="mca_profiles.html#profile-25MCA20105"><i class="fa-solid fa-user"></i>&nbsp;View Profile</a></td>
+            <td><a href="25MCA20105.html"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;View Academic Record</a></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Rohan Mehta</td>
+            <td>25MCA20106</td>
+            <td><a href="mca_profiles.html#profile-25MCA20106"><i class="fa-solid fa-user"></i>&nbsp;View Profile</a></td>
+            <td><a href="25MCA20106.html"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;View Academic Record</a></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Aman Gupta</td>
+            <td>25MCA20107</td>
+            <td><a href="mca_profiles.html#profile-25MCA20107"><i class="fa-solid fa-user"></i>&nbsp;View Profile</a></td>
+            <td><a href="25MCA20107.html"><i class="fa-solid fa-square-poll-vertical"></i>&nbsp;View Academic Record</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 University Institute of Computing (UIC). All Rights Reserved.</p>
+    <p> Address: UIC Campus, City Road, Kharar, India</p>
+    <p>
+      🔗 Follow us on 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+
+  <script src="js/logout.js"></script>
+  <script src="js/search_table.js"></script>
+</body>
+</html>

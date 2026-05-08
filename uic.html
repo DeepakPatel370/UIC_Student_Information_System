@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIC | Student Information System</title>
+  <link rel="stylesheet" href="css/uic.css">
+  <script src="js/auth_check.js"></script>
+
+</head>
+<body>
+
+  <header>
+    <img src="images/uic logo.jpg" alt="UIC Logo">
+    <h1>University Institute of Computing</h1>
+    <h2><u>Student Information System</u></h2>
+
+    <nav>
+      <a href="uic.html">Home</a> |
+      <a href="uic_bca.html">BCA</a> |
+      <a href="uic_mca.html">MCA</a> |
+      <button onclick="logoutUser()" style="background-color:#653e22; color:white; padding:8px 15px; border:none; border-radius:6px; cursor:pointer;">Logout</button>
+  </header>
+
+  <main>
+    <h3 id="welcomeMsg"></h3>
+    <section class="about-section">
+  <div class="about-text">
+    <p>
+      The University Institute of Computing (UIC) is a hub of innovation in computer science and IT education. 
+      We prepare students with cutting-edge skills in software development, AI, data science, and emerging technologies. 
+    </p>
+    <ul>
+      <li>"Shaping Future-Ready Innovators in Computing and IT."</li>
+      <li>"Where Technology Meets Innovation."</li>
+      <li>"Empowering Minds, Driving Digital Futures."</li>
+      <li>"Excellence in Computer Science and Emerging Technologies."</li>
+      <li>"Transforming Learners into Leaders of the Digital World."</li>
+    </ul>
+  </div>
+
+  <div class="about-img">
+    <img src="images/Campus Img.jpg" alt="Campus" height="200">
+    <!-- <img src="images/campus 2.jpg" alt="Campus" height="200"> -->
+  </div>
+</section>
+
+    <section>
+      <h2><u>Department of Computer Application</u></h2>
+      <p>
+        The Department of Computer Applications offers quality education in the field of computer science and information technology...
+      </p>
+      <h3>To view student profiles and academic records, click below:</h3>
+      <div class="Dept">
+        <button style="background-color:#653e22; color:white; border:none; padding:15px 25px; font-size:18px; font-weight:bold; border-radius:8px; cursor:pointer; margin:10px;">
+            <a href="uic_bca.html" style="color:white; text-decoration:none; display:block;">Bachelor of Computer Applications (BCA)</a>
+        </button>
+        <br><br>
+        <button style="background-color:#653e22; color:white; border:none; padding:15px 25px; font-size:18px; font-weight:bold; border-radius:8px; cursor:pointer; margin:10px;">
+            <a href="uic_mca.html" style="color:white; text-decoration:none; display:block;">Master of Computer Applications (MCA)</a>
+        </button>
+       </div>
+
+    </section>
+
+    <section id="notice">
+      <h2><u>Notice Board</u></h2>
+      <marquee behavior="scroll" direction="up" scrollamount="3" height="120">
+        <ul>
+          <li> New Semester Registration starts from 10th Sept 2025.</li>
+          <li> Placement Drive by Infosys on 20th Sept 2025.</li>
+          <li> MCA 3rd Semester Exams begin from 5th Oct 2025.</li>
+          <li> Workshop on AI & ML scheduled for 12th Oct 2025.</li>
+        </ul>
+      </marquee>
+    </section>
+
+    <section id="achievements">
+      <h2><u>Student Achievements</u></h2>
+      <ul>
+        <li>BCA student <b>Aditi Sharma</b> secured 1st position in State Hackathon 2025.</li>
+        <li>MCA student <b>Rohit Verma</b> placed at Google with 12 LPA package.</li>
+        <li>Research paper by <b>Neha Singh</b> published in IEEE Journal.</li>
+      </ul>
+    </section>
+
+    <section id="gallery" class="gallery-img">
+      <h2><u>Campus & Events Gallery</u></h2><br>
+      <img src="images/lab.jpeg" alt="Computer Lab" height="150">
+      <img src="images/seminar.jpeg" alt="Seminar Hall" height="150">
+      <img src="images/skills.jpeg" alt="Hackathon Event" height="150">
+      <img src="images/dj night.jpeg" alt="Cultural Event" height="150">
+      <img src="images/maka-trophy-img.jpg" alt="Trophy" height="150">
+      <img src="images/tech-invent.jpg" alt="Tech invent" height="150">
+    </section>
+
+    <section id="faq">
+      <h2><u>Frequently Asked Questions</u></h2>
+      <details><summary>How to register for a new course?</summary><p>You can register through the New Registration form available on this portal.</p></details>
+      <details><summary>Where can I find the syllabus?</summary><p>Syllabus is available under Quick Links section and departmental pages.</p></details>
+      <details><summary>Who to contact for technical issues?</summary><p>Please contact the Coordinator or Co-Coordinator from the Contacts section.</p></details>
+    </section>
+
+    <section id="contacts">
+      <h2><u>Department Contacts</u></h2>
+      <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Er. Prabhjot Kaur</td>
+            <td>Coordinator</td>
+            <td>prabhjot.kaur@uic.edu</td>
+            <td>+91-9865421301</td>
+          </tr>
+          <tr>
+            <td>Ms. Sweta</td>
+            <td>Co-Coordinator</td>
+            <td>sweta@uic.edu</td>
+            <td>+91-9898745602</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 University Institute of Computing (UIC). All Rights Reserved.</p>
+    <p> Address: UIC Campus, City Road, Kharar, India</p>
+    <p>
+      🔗 Follow us on 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">Twitter</a>
+    </p>
+  </footer>
+  <script src="js/welcome.js"></script>
+  <script src="js/logout.js"></script>
+
+</body>
+</html>

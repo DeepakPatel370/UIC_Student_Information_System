@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UIC | Staff Registration</title>
+
+  <link rel="stylesheet" href="css/staff_register.css">
+
+  <script src="js/staff_register.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <img src="images/uic logo.jpg" alt="UIC Logo" />
+    <h1>University Institute of Computing</h1>
+    <h2><u>Staff Information System</u></h2>
+  </header>
+
+  <main>
+    <div class="register-card">
+      <h2>🧑‍🏫 Staff Registration Form</h2>
+      <form onsubmit="registerStaff(event)">
+        <div class="form-group">
+          <label class="req">Staff ID</label>
+          <input type="text" id="staffid" placeholder="Enter Staff ID" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Full Name</label>
+          <input type="text" id="name" placeholder="Enter Full Name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Email</label>
+          <input type="email" id="email" placeholder="Enter Email" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Department</label>
+          <select id="department" required>
+            <option value="">Select Department</option>
+            <option>BCA</option>
+            <option>MCA</option>
+            <option>IT</option>
+            <option>CS</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Designation</label>
+          <input type="text" id="designation" placeholder="e.g., Assistant Professor" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Contact Number</label>
+          <input type="tel" id="phone" placeholder="10-digit Mobile Number" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Create Password</label>
+          <input type="password" id="password" placeholder="Enter Password" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Confirm Password</label>
+          <input type="password" id="confirmPassword" placeholder="Re-enter Password" required>
+        </div>
+
+        <div class="form-group">
+          <label class="req">Upload Photo</label>
+          <input type="file" id="photo" accept="image/*">
+        </div>
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <button type="button" onclick="window.location.href='login_select.html'">Back to Login</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 University Institute of Computing (UIC). All Rights Reserved.</p>
+    <p>Address: UIC Campus, City Road, Kharar, India</p>
+  </footer>
+</body>
+</html>
